@@ -33,7 +33,7 @@ private class MealDiffCallBack: DiffUtil.ItemCallback<Meal>(){
 
 }
 
-class MealViewHolder(val binding: ListItemMealBinding): RecyclerView.ViewHolder(binding.root){
+class MealViewHolder(private val binding: ListItemMealBinding): RecyclerView.ViewHolder(binding.root){
     fun bindData(meal: Meal){
         binding.meal = meal
     }

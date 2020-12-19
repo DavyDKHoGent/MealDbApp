@@ -11,7 +11,7 @@ import com.example.mealdbapp.databinding.FragmentMealDetailBinding
 
 class MealDetailFragment : Fragment() {
 
-    val args: MealDetailFragmentArgs by navArgs()
+    private val args: MealDetailFragmentArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

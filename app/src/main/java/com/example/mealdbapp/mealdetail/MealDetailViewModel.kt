@@ -14,7 +14,7 @@ class MealDetailViewModel(context: Context) : ViewModel() {
     private var _meal = MutableLiveData<Meal>()
     val meal: LiveData<Meal>
     get() = _meal
-    val dao = AppDatabase.getDatabase(context).mealDao()
+    private val dao = AppDatabase.getDatabase(context).mealDao()
 
     fun updateMeal(id: String){
         viewModelScope.launch {

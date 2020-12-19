@@ -15,7 +15,7 @@ class MealOverviewViewModel(private val apiService: MealApiService, context: Con
     private var _meals = MutableLiveData<List<Meal>>()
     val meals : LiveData<List<Meal>>
     get() = _meals
-    val dao = AppDatabase.getDatabase(context).mealDao()
+    private val dao = AppDatabase.getDatabase(context).mealDao()
 
     init {
         getMeals('b')
